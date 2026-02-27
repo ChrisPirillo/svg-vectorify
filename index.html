@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en"><head><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1CQ4D3VQ3L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1CQ4D3VQ3L');
+  </script>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+
+<title>SVG Vectorify: Pro Image to Vector Converter</title>
+
+<meta name="description" content="Transform raster images into high-quality, scalable SVGs or optimize existing vector files with precision controls for color, paths, and detail.">
+<meta name="keywords" content="svg converter, vectorize image, image to svg, vector optimization, raster to vector, svg refactor, web utility, graphic design tool">
+<meta name="author" content="Chris Pirillo">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0f172a">
+<meta name="application-name" content="SVG Vectorify: Pro Image to Vector Converter">
+<meta name="apple-mobile-web-app-title" content="SVG Vectorify: Pro Image to Vector Converter">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+
+<meta property="og:site_name" content="Chris Pirillo's Arcade">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SVG Vectorify: Pro Image to Vector Converter">
+<meta property="og:description" content="Transform raster images into high-quality, scalable SVGs or optimize existing vector files with precision controls for color, paths, and detail.">
+<meta property="og:url" content="https://arcade.pirillo.com/svg-vectorify.html">
+<meta property="og:image" content="https://arcade.pirillo.com/images/svg-vectorify.png">
+<meta property="og:image:alt" content="SVG Vectorify: Pro Image to Vector Converter">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-02-26T23:47:11.715Z">
+<meta property="article:author" content="Chris Pirillo">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ChrisPirillo">
+<meta name="twitter:creator" content="@ChrisPirillo">
+<meta name="twitter:title" content="SVG Vectorify: Pro Image to Vector Converter">
+<meta name="twitter:description" content="Transform raster images into high-quality, scalable SVGs or optimize existing vector files with precision controls for color, paths, and detail.">
+<meta name="twitter:image" content="https://arcade.pirillo.com/images/svg-vectorify.png">
+<meta name="twitter:domain" content="arcade.pirillo.com">
+<meta name="twitter:url" content="https://arcade.pirillo.com/svg-vectorify.html">
+
+<link rel="canonical" href="https://arcade.pirillo.com/svg-vectorify.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "SVG Vectorify: Pro Image to Vector Converter",
+  "description": "Transform raster images into high-quality, scalable SVGs or optimize existing vector files with precision controls for color, paths, and detail.",
+  "url": "https://arcade.pirillo.com/svg-vectorify.html",
+  "image": "https://arcade.pirillo.com/images/svg-vectorify.png",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://arcade.pirillo.com/images/svg-vectorify.png"
+  },
+  "datePublished": "2026-02-26T23:47:11.715Z",
+  "dateModified": "2026-02-26T23:47:11.715Z",
+  "author": {
+    "@type": "Person",
+    "name": "Chris Pirillo",
+    "url": "https://pirillo.com",
+    "sameAs": [
+      "https://x.com/ChrisPirillo",
+      "https://linkedin.com/in/chrispirillo"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chris Pirillo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pirillo.com/logo.png"
+    }
+  },
+  "mainEntity": {
+    "@type": "WebApplication",
+    "name": "SVG Vectorify: Pro Image to Vector Converter",
+    "description": "Transform raster images into high-quality, scalable SVGs or optimize existing vector files with precision controls for color, paths, and detail.",
+    "image": "https://arcade.pirillo.com/images/svg-vectorify.png",
+    "operatingSystem": "Any",
+    "applicationCategory": "Utility",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chris Pirillo",
+      "url": "https://pirillo.com"
+    },
+    "datePublished": "2026-02-26T23:47:11.715Z",
+    "inLanguage": "en-US"
+  }
+}</script>
+
+<meta charset="UTF-8">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/imagetracerjs@1.2.6/imagetracer_v1.2.6.js" defer=""></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>body { font-family: 'Inter', sans-serif; user-select: none; -webkit-user-select: none; }
+input[type="range"] { accent-color: #3b82f6; cursor: pointer; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+#preview-viewport { position: relative; width: 100%; height: 100%; display: grid; grid-template-areas: "stack"; place-items: center; overflow: hidden; background-color: transparent; }
+#original-preview-container, #svg-container { grid-area: stack; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; transition: opacity 0.15s ease-in-out; }
+#original-preview-container canvas, #original-preview-container img, #original-svg-box, #original-svg-box svg, #svg-container svg { width: 100% !important; height: 100% !important; max-width: 100% !important; max-height: 100% !important; display: block; object-fit: contain !important; }
+#original-preview-container canvas { image-rendering: -webkit-optimize-contrast; }
+.checkerboard { background-image: linear-gradient(45deg, #e5e7eb 25%, transparent 25%), linear-gradient(-45deg, #e5e7eb 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #e5e7eb 75%), linear-gradient(-45deg, transparent 75%, #e5e7eb 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px; background-color: #ffffff; }
+.setting-card { background: #ffffff; border: 1px solid #f1f5f9; padding: 1rem; border-radius: 1rem; transition: opacity 0.2s ease; }
+.controls-disabled { opacity: 0.5; pointer-events: none; filter: grayscale(0.5); }
+#proc-canvas { display: none; }
+@keyframes pulse-green { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+.animate-pulse-green { animation: pulse-green 2s infinite; }
+.modal-overlay { backdrop-filter: blur(4px); transition: all 0.3s ease-in-out; }</style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen">
+
+    <div id="info-modal" class="fixed inset-0 z-[200] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="modal-overlay absolute inset-0 bg-slate-900/60" onclick="closeModal()"></div>
+        <div class="bg-white rounded-3xl shadow-2xl w-full max-w-lg relative z-10 overflow-hidden transform scale-95 transition-transform duration-300" id="modal-content">
+            <div class="p-6 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
+                <h2 class="text-xl font-bold flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    About SVG Vectorify
+                </h2>
+                <button onclick="closeModal()" class="p-2 hover:bg-slate-200 rounded-full transition-colors" aria-label="p 2 hover:bg slate 200 rounded full transition colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="p-8 space-y-6 max-h-[70vh] overflow-y-auto">
+                <div>
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-3">How to use</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        <span class="font-semibold text-blue-600">Drag and drop</span> any image or SVG file, or use the <span class="font-semibold">Upload</span> button. 
+                        For raster images, use the sidebar to tune threshold and precision. 
+                        For SVGs, the app automatically sanitizes colors, rounds paths, and strips junk metadata.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-3">
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Links &amp; Resources</h3>
+                    <a href="https://arcade.pirillo.com/" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-blue-50 hover:text-blue-700 transition-all border border-slate-100 group">
+                        <span class="font-medium">More of My Apps</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                    <a href="https://chris.pirillo.com/" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-blue-50 hover:text-blue-700 transition-all border border-slate-100 group">
+                        <span class="font-medium">Follow Chris Pirillo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                    <a href="https://ctrlaltcreate.live/" target="_blank" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-blue-50 hover:text-blue-700 transition-all border border-slate-100 group">
+                        <span class="font-medium">Learn How to Make Apps</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                    <div class="grid grid-cols-2 gap-3 mt-2">
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=UMWCDWGVXVHZU" target="_blank" class="flex items-center justify-center p-3 rounded-xl bg-yellow-50 text-yellow-800 hover:bg-yellow-100 transition-all font-bold text-sm border border-yellow-200">
+                            Donate
+                        </a>
+                        <a href="https://patreon.com/ChrisPirillo" target="_blank" class="flex items-center justify-center p-3 rounded-xl bg-orange-50 text-orange-800 hover:bg-orange-100 transition-all font-bold text-sm border border-orange-200">
+                            Patreon
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 bg-slate-50 text-center">
+                <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest italic">SVG Vectorify - Built with Precision</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="drop-overlay" class="fixed inset-0 bg-blue-600/10 border-4 border-dashed border-blue-500 z-[100] pointer-events-none opacity-0 transition-opacity flex items-center justify-center">
+        <div class="bg-white p-8 rounded-3xl shadow-2xl text-center">
+            <p class="text-2xl font-bold text-blue-600">Drop to Process</p>
+            <p class="text-slate-500">Release to vectorize or refactor</p>
+        </div>
+    </div>
+
+    <div class="max-w-screen-xl mx-auto px-4 py-8 w-full">
+        <header class="relative flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+            <div class="flex items-center gap-3">
+                <h1 class="text-3xl font-bold tracking-tight text-slate-900">SVG Vectorify<span class="text-blue-600">.</span></h1>
+                <button onclick="openModal()" class="p-1 text-slate-300 hover:text-blue-500 transition-colors" title="How it works">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                </button>
+            </div>
+            <div id="status-badge" class="hidden absolute top-0 right-0 px-5 py-2.5 bg-green-500 text-white rounded-2xl shadow-lg animate-pulse-green flex flex-col items-center z-10">
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+                    <span id="status-text" class="text-xs font-bold uppercase tracking-widest">Processing...</span>
+                </div>
+                <span id="status-detail" class="text-[9px] opacity-80 font-medium mt-0.5">Calculating...</span>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start w-full">
+            <aside id="main-sidebar" class="lg:col-span-4 space-y-4 max-h-[90vh] overflow-y-auto pr-2 pb-8 transition-all w-full order-2 lg:order-1">
+                <input type="file" id="file-input" class="hidden" accept="image/*,.svg" aria-label="file">
+                
+                <div id="sidebar-context-msg" class="hidden p-4 bg-blue-50 border border-blue-100 rounded-2xl mb-4">
+                    <p class="text-xs font-bold text-blue-600 uppercase mb-1">SVG Refactor Mode</p>
+                    <p class="text-[11px] text-blue-500 leading-relaxed">Toggle between <span class="font-bold">Mono</span> (merged knockout paths) and <span class="font-bold">Color</span> (layered paths). Sliders are disabled for vector inputs.</p>
+                </div>
+
+                <div id="mode-selector" class="flex bg-slate-200 p-1 rounded-xl w-full">
+                    <button id="mode-mono" onclick="setMode('mono')" class="flex-1 py-2 text-xs font-bold rounded-lg bg-white shadow-sm text-slate-900 transition-all">MONO (B&amp;W)</button>
+                    <button id="mode-color" onclick="setMode('color')" class="flex-1 py-2 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-700 transition-all">FULL COLOR</button>
+                </div>
+
+                <div id="controls-group" class="space-y-3 w-full">
+                    <div id="threshold-container" class="setting-card">
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                            <label>Balance (Contrast)</label>
+                            <span id="val-threshold" class="text-blue-600">128</span>
+                        </div>
+                        <input type="range" id="param-threshold" min="1" max="254" value="128" class="w-full" aria-label="range">
+                        <p class="text-[10px] text-slate-400 mt-1">Adjusts where gray areas become black or white.</p>
+                    </div>
+
+                    <div id="color-count-container" class="setting-card hidden">
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                            <label>Colors</label>
+                            <span id="val-colors" class="text-blue-600">16</span>
+                        </div>
+                        <input type="range" id="param-colors" min="2" max="64" value="16" class="w-full" aria-label="range">
+                        <p class="text-[10px] text-slate-400 mt-1">Number of color layers to extract from the image.</p>
+                    </div>
+
+                    <div class="setting-card">
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                            <label>Faithfulness (Simplify)</label>
+                            <span id="val-pathomit" class="text-blue-600">1.0</span>
+                        </div>
+                        <input type="range" id="param-pathomit" min="0" max="20" step="0.5" value="1.0" class="w-full" aria-label="range">
+                        <p class="text-[10px] text-slate-400 mt-1">Removes shaky edges and jitters from small pixels.</p>
+                    </div>
+
+                    <div class="setting-card">
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                            <label>Spline Precision</label>
+                            <span id="val-qtres" class="text-blue-600">1.0</span>
+                        </div>
+                        <input type="range" id="param-qtres" min="0.1" max="10" step="0.1" value="1.0" class="w-full" aria-label="range">
+                        <p class="text-[10px] text-slate-400 mt-1">Lower values stay boxy, higher makes lines curvy.</p>
+                    </div>
+
+                    <div class="setting-card">
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                            <label>Corner Threshold</label>
+                            <span id="val-lthreshold" class="text-blue-600">1.0</span>
+                        </div>
+                        <input type="range" id="param-lthreshold" min="0" max="10" step="0.1" value="1.0" class="w-full" aria-label="range">
+                        <p class="text-[10px] text-slate-400 mt-1">Decides when a point is a sharp corner / curve.</p>
+                    </div>
+
+                    <div class="setting-card">
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                            <label>Noise Filter (Area)</label>
+                            <span id="val-area" class="text-blue-600">4</span>
+                        </div>
+                        <input type="range" id="param-area" min="1" max="100" step="1" value="4" class="w-full" aria-label="range">
+                        <p class="text-[10px] text-slate-400 mt-1">Ignores tiny specks and pixel "dust".</p>
+                    </div>
+
+                    <div class="setting-card">
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                            <label>Super-Res Upscale</label>
+                            <span id="val-scale" class="text-blue-600">1x</span>
+                        </div>
+                        <input type="range" id="param-scale" min="1" max="8" step="1" value="1" class="w-full" aria-label="range">
+                        <p class="text-[10px] text-slate-400 mt-1">Enlarging small images makes smoother curves.</p>
+                    </div>
+
+                    <div class="setting-card space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Ignore Background</label>
+                                <input type="checkbox" id="param-ignorebg" checked="" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" aria-label="checkbox">
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1">Keeps this from creating a large background shape.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Trim Excess Space</label>
+                                <input type="checkbox" id="param-trim" checked="" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" aria-label="checkbox">
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1">Crops the file to the edges of your drawing.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Invert Colors</label>
+                                <input type="checkbox" id="param-invert" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" aria-label="checkbox">
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1">Flips black to white and white to black.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Line Filter</label>
+                                <input type="checkbox" id="param-linefilter" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" aria-label="checkbox">
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1">Enables internal path optimization for straight segments.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="lg:col-span-8 flex flex-col h-full w-full order-1 lg:order-2">
+                <div class="bg-white rounded-3xl p-4 shadow-sm border border-slate-100 flex flex-col flex-grow min-h-[600px] w-full">
+                    <div class="flex flex-col sm:flex-row items-center justify-between mb-6 px-2 gap-4">
+                        <div class="flex bg-slate-100 p-1.5 rounded-2xl w-full sm:w-auto">
+                            <button onclick="switchView('vector')" id="tab-vector" class="flex-1 sm:flex-none px-6 py-2 text-sm font-bold rounded-xl bg-white shadow-sm text-blue-600 transition-all">Vector</button>
+                            <button onclick="switchView('original')" id="tab-original" class="flex-1 sm:flex-none px-6 py-2 text-sm font-bold rounded-xl text-slate-500 hover:text-slate-800 transition-all">Original</button>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <button onclick="toggleCheckerboard()" id="btn-checkerboard" class="p-2 text-slate-400 hover:text-blue-600 transition-colors" title="Toggle Checkerboard">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v18"></path><path d="M15 3v18"></path><path d="M3 9h18"></path><path d="M3 15h18"></path></svg>
+                            </button>
+                            
+                            <div id="action-buttons" class="hidden flex items-center gap-3">
+                                <button id="btn-copy" onclick="copySvg()" class="px-4 py-2.5 text-slate-600 hover:bg-slate-50 rounded-xl transition-all font-bold text-sm border border-slate-100">Copy</button>
+                                <button id="btn-export" onclick="downloadSvg()" class="px-6 py-2.5 bg-slate-900 hover:bg-black text-white text-sm font-bold rounded-xl shadow-lg transition-all">Export SVG</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="viewport-container" class="relative flex-grow bg-slate-50 rounded-2xl border border-slate-200 w-full overflow-hidden">
+                        <div id="empty-state" class="text-center absolute inset-0 flex flex-col items-center justify-center cursor-pointer group z-10">
+                            <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mx-auto mb-4 border border-slate-200 transition-transform group-hover:scale-110">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                            </div>
+                            <p class="text-slate-400 font-medium">Click or Drop Image / SVG anywhere</p>
+                            <button onclick="document.getElementById('file-input').click()" class="mt-4 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-2xl shadow-lg transition-all active:scale-95">
+                                Choose File
+                            </button>
+                        </div>
+                        
+                        <div id="preview-viewport">
+                            <div id="original-preview-container" class="opacity-0 pointer-events-none">
+                                <canvas id="display-canvas" class="hidden"></canvas>
+                                <div id="original-svg-box" class="w-full h-full flex items-center justify-center hidden"></div>
+                            </div>
+                            <div id="svg-container" class="opacity-0 pointer-events-none"></div>
+                        </div>
+
+                        <div id="loader" class="hidden absolute inset-0 bg-white/40 backdrop-blur-sm flex flex-col items-center justify-center z-20">
+                            <div class="w-10 h-10 border-3 border-green-500 border-t-transparent rounded-full animate-spin"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <canvas id="proc-canvas"></canvas>
+    <canvas id="source-canvas" class="hidden"></canvas>
+
+    <div id="message-box" class="fixed bottom-8 left-1/2 -translate-x-1/2 translate-y-20 opacity-0 bg-slate-900 text-white px-6 py-3 rounded-2xl shadow-2xl transition-all duration-300 flex items-center gap-3 z-[101] pointer-events-none">
+        <span id="message-text">Success!</span>
+    </div>
+
+    <script>
+        const dropOverlay = document.getElementById('drop-overlay');
+        const fileInput = document.getElementById('file-input');
+        const svgContainer = document.getElementById('svg-container');
+        const emptyState = document.getElementById('empty-state');
+        const loader = document.getElementById('loader');
+        const statusBadge = document.getElementById('status-badge');
+        const statusText = document.getElementById('status-text');
+        const statusDetail = document.getElementById('status-detail');
+        const actionButtons = document.getElementById('action-buttons');
+        const btnExport = document.getElementById('btn-export');
+        const thresholdContainer = document.getElementById('threshold-container');
+        const colorCountContainer = document.getElementById('color-count-container');
+        const procCanvas = document.getElementById('proc-canvas');
+        const displayCanvas = document.getElementById('display-canvas');
+        const sourceCanvas = document.getElementById('source-canvas');
+        const viewportContainer = document.getElementById('viewport-container');
+        const originalContainer = document.getElementById('original-preview-container');
+        const originalSvgBox = document.getElementById('original-svg-box');
+        const mainSidebar = document.getElementById('main-sidebar');
+        const infoModal = document.getElementById('info-modal');
+        const modalContent = document.getElementById('modal-content');
+        const sidebarContextMsg = document.getElementById('sidebar-context-msg');
+        const controlsGroup = document.getElementById('controls-group');
+        const modeSelector = document.getElementById('mode-selector');
+
+        let currentImageObj = null;
+        let originalSvgText = "";
+        let lastSvgString = '';
+        let debounceTimer;
+        let currentMode = 'mono';
+        let isProcessing = false;
+        let activeTab = 'vector';
+        let isDirectSvgInput = false;
+        
+        let lastCrop = { minX: 0, minY: 0, width: 0, height: 0, active: false };
+
+        function openModal() {
+            if (infoModal) {
+                infoModal.classList.remove('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }
+        }
+
+        function closeModal() {
+            if (infoModal) {
+                infoModal.classList.add('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+            }
+        }
+
+        function handleFile(file) {
+            if (!file) return;
+            
+            isDirectSvgInput = false;
+            if (btnExport) btnExport.textContent = 'Export SVG';
+            if (sidebarContextMsg) sidebarContextMsg.classList.add('hidden');
+            if (controlsGroup) controlsGroup.classList.remove('controls-disabled');
+
+            if (file.type === 'image/svg+xml' || file.name.endsWith('.svg')) {
+                handleSvgFile(file);
+                return;
+            }
+
+            if (!file.type.startsWith('image/')) return showMessage('Invalid image format');
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    const scaleEl = document.getElementById('param-scale');
+                    const valScale = document.getElementById('val-scale');
+                    if (scaleEl && valScale && scaleEl.value !== '1') {
+                        scaleEl.value = 1;
+                        valScale.textContent = '1x';
+                    }
+
+                    currentImageObj = img;
+                    sourceCanvas.width = img.naturalWidth;
+                    sourceCanvas.height = img.naturalHeight;
+                    sourceCanvas.getContext('2d').drawImage(img, 0, 0);
+                    emptyState.classList.add('hidden');
+                    actionButtons.classList.remove('hidden');
+                    originalSvgBox.classList.add('hidden');
+                    displayCanvas.classList.remove('hidden');
+                    lastCrop.active = false;
+                    vectorize(true); 
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        async function handleSvgFile(file) {
+            const text = await file.text();
+            isDirectSvgInput = true;
+            originalSvgText = text;
+            if (btnExport) btnExport.textContent = 'Optimize SVG';
+            
+            statusBadge.classList.remove('hidden');
+            loader.classList.remove('hidden');
+            updateStatus("Refactoring", "Cleaning SVG paths...");
+
+            // Setup preview containers
+            originalSvgBox.innerHTML = text;
+            originalSvgBox.classList.remove('hidden');
+            displayCanvas.classList.add('hidden');
+            emptyState.classList.add('hidden');
+            actionButtons.classList.remove('hidden');
+            
+            if (sidebarContextMsg) sidebarContextMsg.classList.remove('hidden');
+            if (controlsGroup) controlsGroup.classList.add('controls-disabled');
+
+            // Force internal SVG scaling for preview
+            const originalSvg = originalSvgBox.querySelector('svg');
+            if (originalSvg) {
+                originalSvg.style.width = "100%";
+                originalSvg.style.height = "100%";
+                originalSvg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+            }
+
+            setTimeout(() => {
+                triggerRefactor();
+            }, 500);
+        }
+
+        function triggerRefactor() {
+            if (!isDirectSvgInput) return;
+            const cleanSvg = refactorSvg(originalSvgText);
+            lastSvgString = cleanSvg;
+            svgContainer.innerHTML = cleanSvg;
+            
+            const svg = svgContainer.querySelector('svg');
+            if (svg) { 
+                svg.style.width = "100%"; 
+                svg.style.height = "100%"; 
+                svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+            }
+            
+            loader.classList.add('hidden');
+            statusBadge.classList.add('hidden');
+            switchView('vector');
+            showMessage('SVG Refactored & Optimized');
+        }
+
+        function refactorSvg(svgText) {
+            const parser = new DOMParser();
+            const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
+            const root = svgDoc.documentElement;
+
+            const attrsToRemove = ['version', 'desc', 'title', 'id', 'opacity', 'style'];
+            attrsToRemove.forEach(a => root.removeAttribute(a));
+            root.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+            
+            const w = root.getAttribute('width');
+            const h = root.getAttribute('height');
+            if (!root.getAttribute('viewBox') && w && h) {
+                root.setAttribute('viewBox', `0 0 ${w} ${h}`);
+            }
+
+            const elements = root.querySelectorAll('*');
+            let masterD = "";
+
+            elements.forEach(el => {
+                const style = el.getAttribute('style');
+                if (style) {
+                    const rules = style.split(';').filter(r => r.trim());
+                    rules.forEach(rule => {
+                        const [prop, val] = rule.split(':').map(s => s.trim());
+                        if (prop && val) el.setAttribute(prop, val);
+                    });
+                    el.removeAttribute('style');
+                }
+
+                const blacklist = ['class', 'id', 'data-name', 'xmlns:xlink'];
+                blacklist.forEach(attr => el.removeAttribute(attr));
+
+                ['fill', 'stroke'].forEach(attr => {
+                    let val = el.getAttribute(attr);
+                    if (val) {
+                        if (val.includes('rgb')) val = rgbToHex(val);
+                        el.setAttribute(attr, val);
+                    }
+                });
+
+                if (el.tagName === 'path') {
+                    const d = el.getAttribute('d');
+                    if (d) {
+                        const optimizedD = optimizePathData(d);
+                        el.setAttribute('d', optimizedD);
+                        if (currentMode === 'mono') {
+                            masterD += optimizedD + " ";
+                        }
+                    }
+                }
+
+                const op = el.getAttribute('opacity');
+                if (op) {
+                    const nOp = parseFloat(op);
+                    if (nOp >= 0.99) el.removeAttribute('opacity');
+                    else el.setAttribute('opacity', Math.round(nOp * 100) / 100);
+                }
+
+                const sw = el.getAttribute('stroke-width');
+                const stroke = el.getAttribute('stroke');
+                if (stroke === 'none' || (sw && parseFloat(sw) < 0.1)) {
+                    el.removeAttribute('stroke');
+                    el.removeAttribute('stroke-width');
+                }
+            });
+
+            if (currentMode === 'mono') {
+                while (root.firstChild) root.removeChild(root.firstChild);
+                const combinedPath = svgDoc.createElementNS("http://www.w3.org/2000/svg", "path");
+                combinedPath.setAttribute("d", masterD.trim());
+                combinedPath.setAttribute("fill", "#000000");
+                combinedPath.setAttribute("fill-rule", "evenodd");
+                root.appendChild(combinedPath);
+            }
+
+            const serializer = new XMLSerializer();
+            let result = serializer.serializeToString(root);
+            return '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n' + result;
+        }
+
+        function rgbToHex(str) {
+            if (!str || (!str.includes('rgb') && !str.includes('rgba'))) return str;
+            const match = str.match(/[\d\.]+/g);
+            if (!match || match.length < 3) return str;
+            const r = parseInt(match[0]), g = parseInt(match[1]), b = parseInt(match[2]);
+            const toHex = (c) => c.toString(16).padStart(2, '0');
+            return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+        }
+
+        function updateOriginalPreview() {
+            if (isDirectSvgInput) return; 
+            if (!currentImageObj) return;
+            const ctx = displayCanvas.getContext('2d');
+            const upscaleFactor = parseInt(document.getElementById('param-scale').value);
+            const isInverted = document.getElementById('param-invert').checked;
+
+            if (lastCrop.active) {
+                displayCanvas.width = lastCrop.width;
+                displayCanvas.height = lastCrop.height;
+                ctx.clearRect(0, 0, displayCanvas.width, displayCanvas.height);
+                if (isInverted) ctx.filter = 'invert(1)';
+                ctx.drawImage(currentImageObj, 
+                    lastCrop.minX, lastCrop.minY, lastCrop.width / upscaleFactor, lastCrop.height / upscaleFactor,
+                    0, 0, lastCrop.width, lastCrop.height
+                );
+            } else {
+                displayCanvas.width = currentImageObj.naturalWidth * upscaleFactor;
+                displayCanvas.height = currentImageObj.naturalHeight * upscaleFactor;
+                ctx.clearRect(0, 0, displayCanvas.width, displayCanvas.height);
+                if (isInverted) ctx.filter = 'invert(1)';
+                ctx.drawImage(currentImageObj, 0, 0, displayCanvas.width, displayCanvas.height);
+            }
+            ctx.filter = 'none';
+        }
+
+        window.addEventListener('dragenter', (e) => { e.preventDefault(); if(dropOverlay) dropOverlay.classList.remove('opacity-0'); });
+        window.addEventListener('dragover', (e) => e.preventDefault());
+        window.addEventListener('dragleave', (e) => { if (!e.relatedTarget && dropOverlay) dropOverlay.classList.add('opacity-0'); });
+        window.addEventListener('drop', (e) => {
+            e.preventDefault(); if(dropOverlay) dropOverlay.classList.add('opacity-0');
+            if (!isProcessing && e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+        });
+
+        emptyState.addEventListener('click', (e) => { 
+            if (e.target.tagName !== 'BUTTON' && !isProcessing) fileInput.click(); 
+        });
+        fileInput.addEventListener('change', (e) => { if (e.target.files.length) handleFile(e.target.files[0]); });
+
+        ['colors', 'area', 'qtres', 'lthreshold', 'threshold', 'pathomit', 'scale'].forEach(id => {
+            const el = document.getElementById(`param-${id}`);
+            if (el) el.addEventListener('input', () => {
+                const val = document.getElementById(`val-${id}`);
+                if (val) val.textContent = id === 'scale' ? `${el.value}x` : el.value;
+                if (!isDirectSvgInput) debouncedVectorize();
+            });
+        });
+
+        const toggleIds = ['param-ignorebg', 'param-trim', 'param-invert', 'param-linefilter'];
+        toggleIds.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('change', () => { 
+                    if(!isDirectSvgInput) debouncedVectorize(); 
+                });
+            }
+        });
+
+        function setControlsEnabled(enabled) {
+            isProcessing = !enabled;
+            if (mainSidebar) mainSidebar.classList.toggle('controls-disabled', !enabled);
+            if (actionButtons) actionButtons.classList.toggle('controls-disabled', !enabled);
+            if (isDirectSvgInput && controlsGroup) {
+                controlsGroup.classList.add('controls-disabled');
+            }
+        }
+
+        async function updateStatus(main, sub) {
+            if (statusText) statusText.textContent = main.toUpperCase(); 
+            if (statusDetail) statusDetail.textContent = sub || "";
+            await new Promise(r => setTimeout(r, 0));
+        }
+
+        function setMode(mode) {
+            currentMode = mode;
+            const monoBtn = document.getElementById('mode-mono');
+            const colorBtn = document.getElementById('mode-color');
+            if (monoBtn) monoBtn.className = mode === 'mono' ? "flex-1 py-2 text-xs font-bold rounded-lg bg-white shadow-sm text-slate-900 transition-all" : "flex-1 py-2 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-700 transition-all";
+            if (colorBtn) colorBtn.className = mode === 'color' ? "flex-1 py-2 text-xs font-bold rounded-lg bg-white shadow-sm text-slate-900 transition-all" : "flex-1 py-2 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-700 transition-all";
+            
+            if (thresholdContainer) thresholdContainer.classList.toggle('hidden', mode !== 'mono');
+            if (colorCountContainer) colorCountContainer.classList.toggle('hidden', mode !== 'color');
+            
+            if (isDirectSvgInput) {
+                triggerRefactor();
+            } else {
+                debouncedVectorize();
+            }
+        }
+
+        function toggleCheckerboard() { if (viewportContainer) viewportContainer.classList.toggle('checkerboard'); }
+
+        function debouncedVectorize() {
+            clearTimeout(debounceTimer);
+            if (!isProcessing) debounceTimer = setTimeout(() => vectorize(false), 300);
+        }
+
+        function optimizePathData(d) {
+            if (!d) return "";
+            return d.replace(/(-?\d+\.\d+)/g, (match) => {
+                const num = parseFloat(match);
+                return Math.round(num * 100) / 100;
+            });
+        }
+
+        async function vectorize(forceTab) {
+            if (!currentImageObj || isProcessing || isDirectSvgInput) return;
+            setControlsEnabled(false);
+            statusBadge.classList.remove('hidden'); loader.classList.remove('hidden');
+            
+            try {
+                const upscaleFactor = parseInt(document.getElementById('param-scale').value);
+                const isInverted = document.getElementById('param-invert').checked;
+                const thresholdVal = parseInt(document.getElementById('param-threshold').value);
+                const ignoreBg = document.getElementById('param-ignorebg').checked;
+                const sw = currentImageObj.naturalWidth, sh = currentImageObj.naturalHeight;
+
+                procCanvas.width = sw * upscaleFactor; 
+                procCanvas.height = sh * upscaleFactor;
+                const ctx = procCanvas.getContext('2d', { willReadFrequently: true });
+
+                ctx.imageSmoothingEnabled = true;
+
+                if (currentMode === 'color') {
+                    ctx.fillStyle = isInverted ? '#000000' : '#ffffff';
+                    ctx.fillRect(0, 0, procCanvas.width, procCanvas.height);
+                    if (isInverted) ctx.filter = 'invert(1)';
+                    ctx.drawImage(currentImageObj, 0, 0, procCanvas.width, procCanvas.height);
+                    ctx.filter = 'none';
+                } else {
+                    ctx.drawImage(currentImageObj, 0, 0, procCanvas.width, procCanvas.height);
+                    let traceData = ctx.getImageData(0, 0, procCanvas.width, procCanvas.height);
+                    const pixels = traceData.data;
+                    for (let i = 0; i < pixels.length; i += 4) {
+                        const r = pixels[i], g = pixels[i+1], b = pixels[i+2], a = pixels[i+3];
+                        if (a < 10) {
+                            const val = isInverted ? 0 : 255;
+                            pixels[i] = pixels[i+1] = pixels[i+2] = val;
+                            pixels[i+3] = 255;
+                            continue;
+                        }
+                        const gray = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+                        const isInk = gray < thresholdVal;
+                        const finalVal = isInverted ? (isInk ? 255 : 0) : (isInk ? 0 : 255);
+                        pixels[i] = pixels[i+1] = pixels[i+2] = finalVal;
+                        pixels[i+3] = 255;
+                    }
+                    ctx.putImageData(traceData, 0, 0);
+                }
+
+                let traceData = ctx.getImageData(0, 0, procCanvas.width, procCanvas.height);
+                const data = traceData.data;
+
+                if (currentMode === 'mono' && document.getElementById('param-trim').checked) {
+                    let minX = traceData.width, minY = traceData.height, maxX = 0, maxY = 0, has = false;
+                    for (let y=0; y<traceData.height; y++) {
+                        for (let x=0; x<traceData.width; x++) {
+                            const idx = (y * traceData.width + x) * 4;
+                            const isInk = isInverted ? data[idx] > 128 : data[idx] < 128;
+                            if (isInk) { 
+                                if(x<minX)minX=x; if(x>maxX)maxX=x; if(y<minY)minY=y; if(y>maxY)maxY=y; has=true;
+                            }
+                        }
+                    }
+                    if (has) {
+                        const m = 4 * upscaleFactor;
+                        minX=Math.max(0,minX-m); minY=Math.max(0,minY-m); maxX=Math.min(traceData.width-1,maxX+m); maxY=Math.min(traceData.height-1,maxY+m);
+                        const tw=maxX-minX+1, th=maxY-minY+1;
+                        const tCan = document.createElement('canvas'); tCan.width=tw; tCan.height=th;
+                        const tCtx = tCan.getContext('2d');
+                        tCtx.putImageData(traceData, -minX, -minY);
+                        traceData = tCtx.getImageData(0,0,tw,th);
+                        lastCrop = { minX: minX/upscaleFactor, minY: minY/upscaleFactor, width: tw, height: th, active: true };
+                    }
+                } else {
+                    lastCrop.active = false;
+                }
+
+                await updateStatus("Rendering", "Generating SVG...");
+                
+                const options = {
+                    blurradius: 0.5,
+                    blurdelta: 32,
+                    minarea: parseInt(document.getElementById('param-area').value) * (upscaleFactor * upscaleFactor),
+                    qtres: parseFloat(document.getElementById('param-qtres').value),
+                    ltres: parseFloat(document.getElementById('param-lthreshold').value),
+                    pathomit: parseFloat(document.getElementById('param-pathomit').value),
+                    linefilter: document.getElementById('param-linefilter').checked,
+                    strokewidth: 0,
+                    viewbox: true,
+                    desc: false,
+                    numberofcolors: currentMode === 'mono' ? 2 : parseInt(document.getElementById('param-colors').value)
+                };
+
+                if (currentMode === 'mono') {
+                    options.pal = [{ r: 0, g: 0, b: 0, a: 255 }, { r: 255, g: 255, b: 255, a: 255 }];
+                }
+
+                let rawSvgString = ImageTracer.imagedataToSVG(traceData, options);
+
+                const parser = new DOMParser();
+                const svgDoc = parser.parseFromString(rawSvgString, 'image/svg+xml');
+                const root = svgDoc.documentElement || svgDoc.getElementsByTagName('svg')[0];
+                if (!root) throw new Error("SVG Parse Error");
+
+                root.removeAttribute('desc');
+                const descs = Array.from(root.getElementsByTagName('desc'));
+                descs.forEach(d => d.remove());
+
+                const originalW = lastCrop.active ? lastCrop.width / upscaleFactor : sw;
+                const originalH = lastCrop.active ? lastCrop.height / upscaleFactor : sh;
+                
+                root.setAttribute('width', originalW);
+                root.setAttribute('height', originalH);
+                root.setAttribute('viewBox', `0 0 ${originalW} ${originalH}`);
+
+                const wrapperG = svgDoc.createElementNS("http://www.w3.org/2000/svg", "g");
+                const invScale = (1 / upscaleFactor).toFixed(4);
+                wrapperG.setAttribute('transform', `scale(${invScale})`);
+
+                if (currentMode === 'mono') {
+                    const paths = Array.from(root.getElementsByTagName('path'));
+                    const inkColorStr = isInverted ? "255,255,255" : "0,0,0";
+                    const paperColorStr = isInverted ? "0,0,0" : "255,255,255";
+                    let masterD = "";
+                    const finalInkColor = isInverted ? "#ffffff" : "#000000";
+
+                    paths.forEach((p) => {
+                        const fill = p.getAttribute('fill') || "";
+                        const cleanFill = fill.replace(/\s+/g, '');
+                        if (cleanFill.includes(inkColorStr)) {
+                            masterD += (p.getAttribute('d') || "") + " ";
+                        } else if (cleanFill.includes(paperColorStr) && !ignoreBg) {
+                            masterD += (p.getAttribute('d') || "") + " ";
+                        }
+                    });
+
+                    while (root.firstChild) root.removeChild(root.firstChild);
+                    
+                    if (masterD.trim().length > 0) {
+                        const combinedPath = svgDoc.createElementNS("http://www.w3.org/2000/svg", "path");
+                        combinedPath.setAttribute("d", optimizePathData(masterD.trim()));
+                        combinedPath.setAttribute("fill", finalInkColor);
+                        combinedPath.setAttribute("fill-rule", "evenodd"); 
+                        wrapperG.appendChild(combinedPath);
+                    }
+                } else {
+                    const allPaths = Array.from(root.getElementsByTagName('path'));
+                    allPaths.forEach(p => {
+                        p.setAttribute('d', optimizePathData(p.getAttribute('d')));
+                        wrapperG.appendChild(p);
+                    });
+                    while (root.firstChild) { root.removeChild(root.firstChild); }
+                }
+                
+                root.appendChild(wrapperG);
+                root.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                const serializer = new XMLSerializer();
+                lastSvgString = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n' + serializer.serializeToString(root);
+
+                svgContainer.innerHTML = lastSvgString;
+                const svg = svgContainer.querySelector('svg');
+                if (svg) { 
+                    svg.style.width="100%"; 
+                    svg.style.height="100%"; 
+                    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+                }
+
+                if (forceTab) switchView('vector'); else updateOriginalPreview();
+            } catch (err) {
+                console.error(err);
+                showMessage('Error during trace');
+            } finally {
+                loader.classList.add('hidden'); 
+                statusBadge.classList.add('hidden'); 
+                setControlsEnabled(true);
+            }
+        }
+
+        function switchView(type) {
+            activeTab = type;
+            const tabV = document.getElementById('tab-vector');
+            const tabO = document.getElementById('tab-original');
+            if (tabV) {
+                tabV.classList.toggle('bg-white', type === 'vector'); 
+                tabV.classList.toggle('shadow-sm', type === 'vector'); 
+                tabV.classList.toggle('text-blue-600', type === 'vector');
+            }
+            if (tabO) {
+                tabO.classList.toggle('bg-white', type === 'original'); 
+                tabO.classList.toggle('shadow-sm', type === 'original'); 
+                tabO.classList.toggle('text-blue-600', type === 'original');
+            }
+            
+            if (svgContainer) {
+                svgContainer.style.opacity = type === 'vector' ? '1' : '0'; 
+                svgContainer.style.pointerEvents = type === 'vector' ? 'auto' : 'none';
+            }
+            if (originalContainer) {
+                originalContainer.style.opacity = type === 'original' ? '1' : '0'; 
+                originalContainer.style.pointerEvents = type === 'original' ? 'auto' : 'none';
+            }
+            
+            if (type === 'original') updateOriginalPreview();
+        }
+
+        function downloadSvg() {
+            if (!lastSvgString) return;
+            const blob = new Blob([lastSvgString], { type: 'image/svg+xml' });
+            const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = isDirectSvgInput ? 'optimized.svg' : 'vectorify-pro.svg'; a.click();
+            showMessage('SVG Exported');
+        }
+
+        function copySvg() {
+            if (!lastSvgString) return;
+            const t = document.createElement('textarea'); t.value = lastSvgString; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t);
+            showMessage('SVG Code Copied');
+        }
+
+        function showMessage(text) {
+            const b = document.getElementById('message-box'); 
+            const mt = document.getElementById('message-text');
+            if (b && mt) {
+                mt.textContent = text;
+                b.classList.remove('translate-y-20', 'opacity-0'); 
+                setTimeout(() => b.classList.add('translate-y-20', 'opacity-0'), 2500);
+            }
+        }
+    </script>
+
+</body></html>
